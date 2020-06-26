@@ -1,0 +1,24 @@
+<h1>{{title}}</h1>
+<h1 *ngFor="let a of students">{{a.firstname}}</h1>
+<table>
+  <tr>
+  <th>firstname</th>
+  <th>lastname</th>
+  <th>age</th>
+</tr>
+  <tr *ngFor="let a of students">
+  <td>{{a.firstname | titlecase }}</td>
+  <td>{{a.lastname }}</td>
+  <td >{{a.age | currency}}</td>
+  <td><img [src]="a.imge" height="100px" width="100px"> </td>
+  </tr>
+
+</table>
+
+
+<app-login></app-login>
+<app-post></app-post>
+<app-register></app-register>
+<app-category></app-category>
+<app-comment></app-comment>
+
